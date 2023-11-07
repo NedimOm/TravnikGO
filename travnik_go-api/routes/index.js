@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/proba', function(req, res, next) {
-  res.send("Radi!");
+  res.send("Radi ko sat!");
 });
 
 module.exports = router;
