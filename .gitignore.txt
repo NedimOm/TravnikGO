@@ -1,2 +1,3 @@
-.idea
-travnik_go_app/node_modules
+**/.idea
+node_modules
+
