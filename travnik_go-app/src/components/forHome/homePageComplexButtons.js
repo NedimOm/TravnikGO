@@ -22,6 +22,7 @@ const images = [
        url: '/calendar',
        title: 'Calendar',
        width: '30%',
+       path: '/calendar',
     },
     {
        url: '/tours',
