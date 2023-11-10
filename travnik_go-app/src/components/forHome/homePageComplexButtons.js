@@ -9,6 +9,7 @@ const images = [
        url: '',
        title: 'Calendar',
        width: '30%',
+       path: '/calendar',
     },
     {
        url: '',
@@ -90,32 +91,35 @@ function HomePageComplexButtons() {
     return (
         <Box sx={{ flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
     {images.map((image) => (
-        <ImageButton
-            focusRipple
-            key={image.title}
-            style={{
-                width: image.width,
-            }}
-        >
-            <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-            <ImageBackdrop className="MuiImageBackdrop-root" />
-            <Image>
-                <Typography
-                    component="span"
-                    variant="subtitle1"
-                    color="inherit"
-                    sx={{
-                        position: 'relative',
-                        p: 4,
-                        pt: 2,
-                        pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                    }}
-                >
-                    {image.title}
+        <a href={image.path}>
+            <ImageButton
+                focusRipple
+                key={image.title}
+                style={{
+                    width: image.width,
+                }}
 
-                </Typography>
-            </Image>
-        </ImageButton>
+            >
+                <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+                <ImageBackdrop className="MuiImageBackdrop-root" />
+                <Image>
+                    <Typography
+                        component="span"
+                        variant="subtitle1"
+                        color="inherit"
+                        sx={{
+                            position: 'relative',
+                            p: 4,
+                            pt: 2,
+                            pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                        }}
+                    >
+                        {image.title}
+
+                    </Typography>
+                </Image>
+            </ImageButton>
+        </a>
     ))}
     </Box>
 );
