@@ -3,22 +3,35 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import Link from "@mui/material/Link";
+import {useState} from "react";
+import DialogTitle from "@mui/material/DialogTitle";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import Button from "@mui/material/Button";
+import DialogContent from "@mui/material/DialogContent";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import {InputLabel} from "@mui/material";
+import Grid from "@mui/material/Grid";
+import {Quiz} from "../forForYou/quiz";
 
 const images = [
     {
-       url: '',
+       url: '/calendar',
        title: 'Calendar',
        width: '30%',
        path: '/calendar',
     },
     {
-       url: '',
-       title: 'Tour for you',
+       url: '/tours',
+       title: 'Tours',
        width: '40%',
     },
     {
-        url: '',
-        title: 'Take a challenge',
+        url: '#',
+        title: 'For You',
         width: '30%',
     },
 ];
@@ -87,42 +100,56 @@ const ImageMarked = styled('span')(({ theme }) => ({
            transition: theme.transitions.create('opacity'),
        }));
 
+
+
 function HomePageComplexButtons() {
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageClick = (image) => {
+        setSelectedImage(image);
+        setModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setModalOpen(false);
+    };
+
     return (
         <Box sx={{ flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
-    {images.map((image) => (
-        <a href={image.path}>
-            <ImageButton
-                focusRipple
-                key={image.title}
-                style={{
-                    width: image.width,
-                }}
-
-            >
-                <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-                <ImageBackdrop className="MuiImageBackdrop-root" />
-                <Image>
-                    <Typography
-                        component="span"
-                        variant="subtitle1"
-                        color="inherit"
-                        sx={{
-                            position: 'relative',
-                            p: 4,
-                            pt: 2,
-                            pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+            {images.map((image) => (
+                <a href={image.url}>
+                    <ImageButton
+                        focusRipple
+                        onClick={() => {if(image.title === "For You") handleImageClick(image)}}
+                        style={{
+                            width: image.width,
                         }}
                     >
-                        {image.title}
+                        <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+                        <ImageBackdrop className="MuiImageBackdrop-root" />
 
-                    </Typography>
-                </Image>
-            </ImageButton>
-        </a>
-    ))}
-    </Box>
-);
+                        <Image>
+                            <Typography
+                                component="span"
+                                variant="subtitle1"
+                                color="inherit"
+                                sx={{
+                                    position: 'relative',
+                                    p: 4,
+                                    pt: 2,
+                                    pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+                                }}
+                            >
+                                {image.title}
+                            </Typography>
+                        </Image>
+                    </ImageButton>
+                </a>
+            ))}
+            <Quiz isOpen={isModalOpen} onClose={handleCloseModal} image={selectedImage} />
+        </Box>
+    );
 }
 
 export default HomePageComplexButtons;

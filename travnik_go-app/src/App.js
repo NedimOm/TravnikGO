@@ -5,8 +5,8 @@ import './assets/css/App.css';
 import  './assets/css/main.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import TourForYou from "./pages/TourForYou";
-import TakeAChallenge from "./pages/TakeAChallenge";
+import Tours from "./pages/Tours";
+import ForYou from "./pages/ForYou";
 import Calendar from "./pages/Calendar";
 import AdminLogin from "./pages/Admin/login";
 import AdminEvents from "./pages/Admin/adminEvents";
@@ -21,8 +21,8 @@ function App() {
           <Routes>
               <Route index element={<Home />} />
               <Route path="/calendar" element={<Calendar />} />
-              <Route path="/tourforyou" element={<TourForYou />} />
-              <Route path="/takeachallenge" element={<TakeAChallenge />} />
+              <Route path="/tours" element={<Tours />} />
+              <Route path="/for_you" element={<ForYou />} />
               <Route path="/admin" element={<AdminLogin />} />
               <Route path="/admin/events" element={<AdminEvents />} />
               <Route path="/admin/locations" element={<AdminLocations />} />
