@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import EventsTable from "../../components/forAdmin/eventsTable";
 import Sidebar from "../../components/forAdmin/sidebar";
-import AddEventDrawer from "../../components/forAdmin/addEventDrawer";
+import AddLocationDrawer from "../../components/forAdmin/addLocationDrawer";
+import LocationsTable from "../../components/forAdmin/locationsTable";
+import {getLocations} from "../../api";
 function AdminLocations({user, isAuthenticated}) {
-    //setTimeout(protect, 120);
-
-    /*function protect()
-    {
-        if (!isAuthenticated && user == null)
-            return (<Navigate to={"/"}/>)
-    }*/
+    const [locations, setLocations] = useState([]);
+    useEffect(() => {
+        getLocations(setLocations);
+    }, []);
 
     return (
         <div>
@@ -26,11 +25,11 @@ function AdminLocations({user, isAuthenticated}) {
                     <div className="mask text-white mt-4">
                         <div className="container">
                             <div className="mt-5">
-                                <h2 className="text-center m-2" style={{color: '#1976d2'}}>Locations</h2>
+                                <h2 className="text-center m-2" style={{color: 'black'}}>Locations</h2>
                                 <div className="mb-1 d-flex justify-content-end">
-                                    <AddEventDrawer/>
+                                    <AddLocationDrawer getLocations={getLocations} setLocations={setLocations}/>
                                 </div>
-                                <EventsTable/>
+                                <LocationsTable locations={locations} getLocations={getLocations} setLocations={setLocations}/>
                             </div>
                         </div>
                     </div>
