@@ -10,6 +10,7 @@ import TextField from "@mui/material/TextField";
 import {useState} from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import IconButton from "@mui/material/IconButton";
+import {getLocation} from "../../api";
 export default function EditEventDrawer() {
     const [open, setOpen] = React.useState(false);
     const [openSnackbar, setOpenSnackbar] = React.useState(false);
@@ -51,11 +52,6 @@ export default function EditEventDrawer() {
     }
 
     function setData(){
-        setName("Nedim");
-        setLocation("Sarajevo");
-        setDetails("Najbolja predstava");
-        setDate(new Date());
-        setTime(new Date());
     }
 
     function submitData(){
