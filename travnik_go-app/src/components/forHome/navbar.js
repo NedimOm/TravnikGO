@@ -17,15 +17,17 @@ export const Navbar = () => {
                 <a href="#">
                     <img src={require("../../assets/images/travnikgo-transparent-logo-cropped.png")} style={{"width":"220px"}}/>
                 </a>
-                <button
-                    onClick={proba}
-                >
-                    Proba za axios
-                </button>
                 <div className="collapse navbar-collapse" id="navbarExample01">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
                             <a className="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <button
+                                onClick={proba}
+                            >
+                                Proba za axios
+                            </button>
                         </li>
                         <li className="nav-item">
                             <a
