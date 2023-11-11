@@ -9,8 +9,9 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import {Snackbar} from "@mui/joy";
 import MuiAlert from "@mui/material/Alert";
+import {deleteLocation} from "../../api";
 
-export default function DeleteConfirmationDialog() {
+export default function DeleteConfirmationDialog(props) {
     const [open, setOpen] = React.useState(false);
     const [openSnackbar, setOpenSnackbar] = React.useState(false);
 
@@ -28,6 +29,8 @@ export default function DeleteConfirmationDialog() {
 
     const handleClick = () => {
         setOpenSnackbar(true);
+        deleteLocation(props.kod);
+        props.getLocations(props.setLocations);
     };
 
     const handleCloseSnackbar = (event, reason) => {

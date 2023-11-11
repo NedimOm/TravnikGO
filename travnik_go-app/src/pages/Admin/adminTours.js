@@ -26,7 +26,7 @@ function AdminTours({user, isAuthenticated}) {
                     <div className="mask text-white mt-4">
                         <div className="container">
                             <div className="mt-5">
-                                <h2 className="text-center m-2" style={{color: '#1976d2'}}>Tours</h2>
+                                <h2 className="text-center m-2" style={{color: 'black'}}>Tours</h2>
                                 <div className="mb-1 d-flex justify-content-end">
                                     <AddEventDrawer/>
                                 </div>
