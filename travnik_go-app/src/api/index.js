@@ -5,3 +5,9 @@ export const proba = () => {
         console.log(resp);
     });
 }
+
+export const getCalendarEvents = () => {
+    axios.get('http://localhost:3005/calendar').then(res => {
+        console.log(res);
+    });
+}

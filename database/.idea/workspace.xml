@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4783966c-1258-4ba8-b145-b07d3a4e1d8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-api/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-api/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-app/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-app/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-app/src/components/Marker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-app/src/components/eventDetailsModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-app/src/components/eventDetailsModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../travnik_go-app/src/pages/Calendar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../travnik_go-app/src/pages/Calendar/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2XibHUsie6zYSk3QVH41fuqnGMH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenDatabaseViewOnStart" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+</project>

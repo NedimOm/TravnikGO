@@ -2,6 +2,8 @@ import CalendarCard from "../../components/calendarCard";
 import { Navbar } from "../../components/forHome/navbar";
 import {Grid, Stack} from "@mui/material";
 import { SearchByCategory, SearchByWord } from "../../components/calendarSearchbars";
+import { getCalendarEvents } from "../../api";
+import { useEffect, useState } from "react";
 
 function Calendar() {
     const data = [
@@ -36,7 +38,16 @@ function Calendar() {
             categories: ["Music", "Festival"],
         }
     ];
+
+    //const [data, setData] = useState(null);
+
+    /*useEffect(() => {
+        const fetchedData = getCalendarEvents();
+        setData(fetchedData);
+    }, []);*/
+
     return(
+
         <>
             <header>
                 <Navbar />

@@ -6,7 +6,6 @@ import Sheet from '@mui/joy/Sheet';
 import Button from "@mui/material/Button";
 import EventMap from "./eventMap";
 import {Place, WatchLater} from "@mui/icons-material";
-import Marker from "./Marker";
 
 export default function EventDetailsModal({el}) {
     const [open, setOpen] = React.useState(false);
