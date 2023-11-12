@@ -3,18 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import Link from "@mui/material/Link";
 import {useState} from "react";
-import DialogTitle from "@mui/material/DialogTitle";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import Button from "@mui/material/Button";
-import DialogContent from "@mui/material/DialogContent";
-import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import {InputLabel} from "@mui/material";
-import Grid from "@mui/material/Grid";
 import {Quiz} from "../forForYou/quiz";
 
 const images = [
@@ -27,7 +16,7 @@ const images = [
     {
        url: '/tours',
        title: 'Tours',
-       width: '40%',
+       width: '30%',
     },
     {
         url: '#',
@@ -65,6 +54,8 @@ const ImageSrc = styled('span')({
            bottom: 0,
            backgroundSize: 'cover',
            backgroundPosition: 'center 40%',
+           border: '2px solid white',
+           margin: '1px',
        });
 
 const Image = styled('span')(({ theme }) => ({
@@ -116,7 +107,7 @@ function HomePageComplexButtons() {
     };
 
     return (
-        <Box sx={{ flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
+        <Box sx={{ flexWrap: 'wrap', minWidth: 300, width: '100%', borderColor: '#708090'}}>
             {images.map((image) => (
                 <a href={image.url}>
                     <ImageButton
@@ -124,6 +115,8 @@ function HomePageComplexButtons() {
                         onClick={() => {if(image.title === "For You") handleImageClick(image)}}
                         style={{
                             width: image.width,
+                            borderSize: "1px",
+                            borderColor: "#708090",
                         }}
                     >
                         <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
@@ -132,7 +125,7 @@ function HomePageComplexButtons() {
                         <Image>
                             <Typography
                                 component="span"
-                                variant="subtitle1"
+                                variant="h5"
                                 color="inherit"
                                 sx={{
                                     position: 'relative',

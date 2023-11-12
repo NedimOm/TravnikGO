@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="" />
+    <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="just pulling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +26,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2XhiIMQGeiYQCM0SmsW9vyilgzt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,8 +37,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/nedim/Desktop/TravnikGO projekat/TravnikGO",
+    "last_opened_file_path": "C:/Users/nedim/Desktop/TravnikGO projekat/TravnikGO/travnik_go-app/src/assets/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -46,8 +52,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\assets\images" />
+      <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\public" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\components\forAdmin" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\pages\Admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\assets\images" />
+      <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,11 +72,16 @@
       <updated>1699087631557</updated>
       <workItem from="1699087632893" duration="41824000" />
       <workItem from="1699540857296" duration="10296000" />
-      <workItem from="1699572066061" duration="20713000" />
+      <workItem from="1699572066061" duration="20506000" />
+      <workItem from="1699636235301" duration="39911000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="just pulling" />
+    <option name="LAST_COMMIT_MESSAGE" value="just pulling" />
   </component>
 </project>

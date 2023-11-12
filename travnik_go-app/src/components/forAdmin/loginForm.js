@@ -50,9 +50,9 @@ function LoginForm() {
                     alignItems: 'center',
                 }}
             >
-                <div className="mb-5">
+                <div className="mb-4">
                     <a href={"/"}>
-                    <img src={require("../../assets/images/travnikgo-transparent-logo-cropped.png")} style={{"width":"220px"}}/>
+                    <img src={require("../../assets/images/LogoRGB1-transparent.png")} style={{"width":"190px"}}/>
                     </a>
                 </div>
                 <Typography component="h1" variant="h5">

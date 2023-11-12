@@ -13,6 +13,9 @@ const chipsColors = {
     Music: "success",
     Culture: "primary",
     Festival: "warning",
+    Restaurant: 'info',
+    Caffe: 'secondary',
+    'Gas station' : 'error'
 }
 
 export default function CalendarCard({el}) {
@@ -47,7 +50,7 @@ export default function CalendarCard({el}) {
     ]*/
     return (
         <div>
-            <Card sx={{ maxWidth: 345 }} style={{backgroundColor: "#f5f5f3"}}>
+            <Card sx={{ maxWidth: 345, minWidth: 345, height: 510}} style={{backgroundColor: "#f5f5f3"}}>
                 <CardMedia
                     sx={{ height: 200 }}
                     image={el.image}
@@ -72,7 +75,12 @@ export default function CalendarCard({el}) {
                         {el.description.substring(0, 175)}...
                     </Typography>
                 </CardContent>
-                <CardActions>
+                <CardActions sx={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                }}>
                     <EventDetailsModal el={el}/>
                 </CardActions>
             </Card>

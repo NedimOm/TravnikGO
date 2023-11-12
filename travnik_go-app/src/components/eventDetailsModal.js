@@ -1,24 +1,30 @@
 import * as React from 'react';
-import Modal from '@mui/joy/Modal';
 import ModalClose from '@mui/joy/ModalClose';
 import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 import Button from "@mui/material/Button";
 import EventMap from "./eventMap";
 import {Place, WatchLater} from "@mui/icons-material";
-import Marker from "./Marker";
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import Dialog from '@mui/material/Dialog';
 
 export default function EventDetailsModal({el}) {
     const [open, setOpen] = React.useState(false);
+    const theme = useTheme();
+    const fullScreen = useMediaQuery(theme.breakpoints.down('md'));
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     return (
         <>
             <Button variant="outlined" size="small" onClick={() => setOpen(true)}>Learn More</Button>
-            <Modal
-                aria-labelledby="modal-title"
-                aria-describedby="modal-desc"
+            <Dialog
+                fullScreen={fullScreen}
                 open={open}
-                onClose={() => setOpen(false)}
-                sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                onClose={handleClose}
+                aria-labelledby="responsive-dialog-title"
             >
                 <Sheet
                     variant="outlined"
@@ -29,11 +35,11 @@ export default function EventDetailsModal({el}) {
                         boxShadow: 'xs',
                     }}
                 >
-                    <ModalClose variant="plain" sx={{ m: 1 }} />
+                    <ModalClose variant="plain" sx={{ m: 1}} onClick={handleClose}/>
                     <Typography
                         component="h1"
                         id="modal-title"
-                        level="h1"
+                        level="h2"
                         textColor="inherit"
                         fontWeight="lg"
                         mb={2}
@@ -51,7 +57,7 @@ export default function EventDetailsModal({el}) {
                         <WatchLater /> {el.time}
                     </Typography>
                 </Sheet>
-            </Modal>
+            </Dialog>
         </>
     );
 }

@@ -3,51 +3,62 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import  '../../assets/css/main.css';
 import { changeClassNameOnScroll } from "../../assets/javascript/skripta";
-import {useEffect} from "react";
-import { proba } from "../../api";
+import {useEffect, useState} from "react";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
     useEffect(() => {
         changeClassNameOnScroll("navy", 2, "navbar-scrolled");
     }, []);
 
+    const [activeNavItem, setActiveNavItem] = useState(props.page);
+    const [hambClicked, setHambClicked] = useState(false);
+
+    let hamburger = true;
+    const handleNavItemClick = (item) => {
+        setActiveNavItem(item);
+    };
+
     return (
-        <nav className="navbar navbar-expand-sm fixed-top navbar-scroll" id="navy">
+        <nav className={`navbar navbar-expand-sm fixed-top navbar-scroll navbar-dark ${hambClicked === true ? 'backgroundWhite' : ''} ${props.background === 'white' ? 'backgroundWhite' : '' }`}
+             id="navy">
             <div className="container-fluid">
-                <a href="#">
-                    <img src={require("../../assets/images/travnikgo-transparent-logo-cropped.png")} style={{"width":"220px"}}/>
+                <a className="navbar-brand" href="/">
+                    <img src={require("../../assets/images/Logo_RGB_2-transparent.png")} alt="Avatar Logo" style={{width:'70px'}} className="rounded-pill"/>
                 </a>
-                <div className="collapse navbar-collapse" id="navbarExample01">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar" onClick={()=>{setHambClicked(!hambClicked);}}>
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav">
-                        <li className="nav-item active">
-                            <a className="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <button
-                                onClick={proba}
-                            >
-                                Proba za axios
-                            </button>
-                        </li>
-                        <li className="nav-item">
+                        <li className={`nav-item ${activeNavItem === 'Home' ? 'active' : ''}`}>
                             <a
-                                className="nav-link"
-                                href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
-                                rel="nofollow"
-                                target="_blank"
-                            >Demo</a
+                                className={`nav-link ${activeNavItem === 'Home' ? 'active-link' : ''}`}
+                                onClick={() => handleNavItemClick('Home')}
+                                href="/"
                             >
+                                Home
+                            </a>
                         </li>
-                        <li className="nav-item">
+                        <li className={`nav-item ${activeNavItem === 'Locations' ? 'active' : ''}`}>
                             <a
-                                className="nav-link"
-                                href="https://mdbootstrap.com/docs/standard/"
-                                target="_blank"
-                            >Events</a
+                                className={`nav-link ${activeNavItem === 'Locations' ? 'active-link' : ''}`}
+                                onClick={() => handleNavItemClick('Locations')}
+                                href="/locations"
                             >
+                                Locations
+                            </a>
+                        </li>
+                        <li className={`nav-item ${activeNavItem === 'DidYouKnow' ? 'active' : ''}`}>
+                            <a
+                                className={`nav-link ${activeNavItem === 'DidYouKnow' ? 'active-link' : ''}`}
+                                onClick={() => handleNavItemClick('DidYouKnow')}
+                                href="#"
+                            >
+                                Did you know?
+                            </a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
