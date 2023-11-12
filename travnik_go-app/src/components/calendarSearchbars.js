@@ -6,7 +6,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
-import {Box} from "@mui/material";
+import {Box, Stack} from "@mui/material";
 
 export function SearchByCategory() {
     const [category, setCategory] = React.useState('');
@@ -43,6 +43,7 @@ export function SearchByWord() {
 
    return (
         <>
+            <Stack direction={"row"}>
             <InputBase
                 sx={{ minWidth: 200 }}
                 placeholder="Search"
@@ -52,6 +53,7 @@ export function SearchByWord() {
             <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
                 <SearchIcon />
             </IconButton>
+            </Stack>
         </>
     );
     /*return (

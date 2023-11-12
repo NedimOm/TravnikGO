@@ -1,9 +1,25 @@
 import CalendarCard from "../../components/calendarCard";
 import { Navbar } from "../../components/forHome/navbar";
-import {Grid, Stack} from "@mui/material";
+import {Grid, Popover} from "@mui/material";
 import { SearchByCategory, SearchByWord } from "../../components/calendarSearchbars";
+import {useState} from "react";
+import Button from "@mui/material/Button";
+import OurBottomNavigation from "../../components/forHome/bottomNavigation";
 
 function Calendar() {
+    const [anchorEl, setAnchorEl] = useState(null);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popover' : undefined;
+
     const data = [
         {
             image: "https://centralna.ba/wp-content/uploads/2023/10/received_1009472720280862.jpeg",
@@ -36,35 +52,47 @@ function Calendar() {
             categories: ["Music", "Festival"],
         }
     ];
+
     return(
         <>
             <header>
-                <Navbar />
+                <Navbar background={"white"}/>
                 <div
-                    id="intro"
-                    className="bg-image"
                     style={{
-                        "height": "20vh"
+                        "height": "13vh"
                     }}
                 >
-
                 </div>
             </header>
-            <div className="container-fluid  mb-5">
+            <div className="container-fluid mb-4">
                 <div className="container d-flex align-items-center text-center h-100">
                     <div className="mx-auto my-4">
-                        <h1 style={{ color: "#000" }}>TravnikGO Event Calendar 2023/24</h1>
+                        <h3 style={{ color: "#000" }}>TravnikGO Event Calendar</h3>
                         <p>Explore events and plan your trip</p>
+                        <Grid item xs={"auto"}>
+                            <Button aria-describedby={id} variant="outlined" onClick={handleClick}>
+                                FILTER EVENTS
+                            </Button>
+                            <Popover
+                                id={id}
+                                open={open}
+                                anchorEl={anchorEl}
+                                onClose={handleClose}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                            >
+                                <div className={"m-3"}>
+                                    <SearchByCategory />
+                                </div>
+                                <div className={"m-3"}>
+                                    <SearchByWord />
+                                </div>
+                            </Popover>
+                        </Grid>
                     </div>
                 </div>
-                <div className={"container"}>
-                    <Stack direction="row" spacing={3} className="mb-4 d-flex justify-content-start">
-                        <SearchByCategory/>
-                        <SearchByWord/>
-                    </Stack>
-                </div>
-
-
 
                 <Grid
                     container
@@ -82,9 +110,7 @@ function Calendar() {
                             </span>
                             <CalendarCard el={el} style={{ position: "absolute"}}/>
                         </div>
-
                     </Grid>
-
                     ))}
                     { data.map((el) => (
                         <Grid item xs="auto">
@@ -95,9 +121,7 @@ function Calendar() {
                             </span>
                                 <CalendarCard el={el} style={{ position: "absolute"}}/>
                             </div>
-
                         </Grid>
-
                     ))}
                     { data.map((el) => (
                         <Grid item xs="auto">
@@ -108,13 +132,11 @@ function Calendar() {
                             </span>
                                 <CalendarCard el={el} style={{ position: "absolute"}}/>
                             </div>
-
                         </Grid>
-
                     ))}
                 </Grid>
             </div>
-
+            <OurBottomNavigation/>
         </>
     );
 }
