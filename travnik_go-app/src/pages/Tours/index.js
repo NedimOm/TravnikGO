@@ -8,7 +8,6 @@ import { useGeolocated } from "react-geolocated";
 import * as React from "react";
 import TourTabs from "../../components/forTours/tabs";
 import TourMap  from "../../components/forTours/tourMap";
-import TourCard from "../../components/forTours/tourCard"
 import { useState, useEffect } from "react";
 import CircularProgress from '@mui/material/CircularProgress';
 import Divider from '@mui/material/Divider';
@@ -81,7 +80,7 @@ function TourForYou(){
     return(
         <>
             <header>
-                <Navbar />
+                <Navbar background={"white"} page={"Tours"}/>
                 <div
                     id="intro"
                     className="bg-image"
@@ -93,7 +92,7 @@ function TourForYou(){
                         <div className="container d-flex align-items-center text-center h-100">
                             <div className="mx-auto">
                                 <h4 style={{ color: "rgba(0, 0, 0, 0.69)" }}>
-                                    This App can generate your tour in Travnik. Just enter your locaion and you can start your adventure.
+                                    This App can generate your tour in Travnik. Just enter your location and you can start your adventure.
                                 </h4>
                             </div>
                         </div>
@@ -116,7 +115,7 @@ function TourForYou(){
                                 alignItems="center"
                                 minHeight="10vh"
                             >
-                                <Button color={"success"} variant="contained" size={"large"}><AutoFixHighIcon/>Generete tour by my location</Button>
+                                <Button color={"success"} variant="contained" size={"large"}><AutoFixHighIcon/>Generate tour by my location</Button>
                             </Box>
 
                             <TourTabs props={coords}/>
@@ -128,7 +127,7 @@ function TourForYou(){
                                 </div>
                             </Stack>
                         </div>
-                        <div className={"container mt-5"}>
+                        <div className={"container mt-4"}>
                             <section>
                                 <p><b>About Tour</b></p>
                                 <p>{aboutData.about}</p>
