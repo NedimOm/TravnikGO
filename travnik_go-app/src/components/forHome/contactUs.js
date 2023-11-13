@@ -6,14 +6,10 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const ContactUs = () => {
     const boxStyle = {
-        padding: "16px",
-        textAlign: "center",
-        backgroundColor: "whitesmoke",
-        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.1)",
-    };
 
-    const textStyles = {
-        marginBottom: "8px", // Spacing between text lines
+        textAlign: "center",
+        backgroundColor: "white",
+        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.1)",
     };
 
     const iconStyles = {
@@ -23,18 +19,18 @@ const ContactUs = () => {
 
     return (
         <Box style={boxStyle}>
-            <Typography variant="h6" color="primary">
+            <Typography variant="h6" color="primary" className="mb-1 mt-3">
                 Contact Us
             </Typography>
-            <div style={textStyles}>
-                <PhoneIcon style={iconStyles} />
+            <div className="mb-3 mt-3">
                 <Typography variant="body1">
+                    <PhoneIcon style={iconStyles} />
                     Phone: +1 (123) 456-7890
                 </Typography>
             </div>
-            <div style={textStyles}>
-                <EmailIcon style={iconStyles} />
+            <div className="pb-4">
                 <Typography variant="body1">
+                    <EmailIcon style={iconStyles} />
                     Email: challenge@itreboot.ba
                 </Typography>
             </div>

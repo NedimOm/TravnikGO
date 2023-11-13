@@ -14,9 +14,13 @@ import AdminLocations from "./pages/Admin/adminLocations";
 import AdminTours from "./pages/Admin/adminTours";
 import AdminChallenges from "./pages/Admin/adminChallenges";
 import Locations from "./pages/Locations";
+import {useEffect} from "react";
 import Location from "./pages/Location"
 
 function App() {
+    useEffect(()=>{
+        document.title = "TravnikGO";
+    }, []);
 
   return (
       <BrowserRouter>
@@ -32,7 +36,6 @@ function App() {
               <Route path="/admin/locations" element={<AdminLocations />} />
               <Route path="/admin/tours" element={<AdminTours />} />
               <Route path="/admin/challenges" element={<AdminChallenges />} />
-
           </Routes>
       </BrowserRouter>
   );

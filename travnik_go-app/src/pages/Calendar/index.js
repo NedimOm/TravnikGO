@@ -56,7 +56,7 @@ function Calendar() {
     return(
         <>
             <header>
-                <Navbar background={"white"}/>
+                <Navbar background={"white"} page={"Calendar"}/>
                 <div
                     style={{
                         "height": "13vh"
