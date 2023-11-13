@@ -1,7 +1,7 @@
-import CalendarCard from "../../components/calendarCard";
+import CalendarCard from "../../components/forCalendar/calendarCard";
 import { Navbar } from "../../components/forHome/navbar";
 import {Grid, Popover} from "@mui/material";
-import { SearchByCategory, SearchByWord } from "../../components/calendarSearchbars";
+import { SearchByCategory, SearchByWord } from "../../components/forCalendar/calendarSearchbars";
 import {useState} from "react";
 import Button from "@mui/material/Button";
 import OurBottomNavigation from "../../components/forHome/bottomNavigation";

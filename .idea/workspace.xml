@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="just pulling">
+    <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="&quot;Fix: conflicts&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Locations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Locations/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/nedim/Desktop/TravnikGO projekat/TravnikGO/travnik_go-app/src/assets/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -82,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="just pulling" />
-    <option name="LAST_COMMIT_MESSAGE" value="just pulling" />
+    <MESSAGE value="&quot;Fix: conflicts&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Fix: conflicts&quot;" />
   </component>
 </project>
