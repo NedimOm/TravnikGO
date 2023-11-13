@@ -35,18 +35,20 @@ router.get(`/getSpecialActivities/:data`, function(req, res, next) {
                 JOIN location AS l ON a.id_location = l.id
                 JOIN category_in_activity AS ca ON ca.id_activity = a.id
                 JOIN category AS c ON c.id = ca.id_category
-                WHERE ($2 > a.ends AND a.starts < $1) OR a.starts IS NULL
                 GROUP BY a.id;`
-    db.all(sql,[data.starts, data.ends],  (err, rows) => {
+    db.all(sql,  (err, rows) => {
         if (err) {
             throw err;
         }
         let temp = data.categories;
+        rows = rows.filter(item => {
+            return (item.starts === null || item.starts > (new Date(data.starts)).getTime()) && (item.ends === null || (new Date(item.ends)) < (new Date(data.ends)).getTime())
+        })
         if(temp === undefined){
-            res.send({activites: rows})
-            net.run(rows[0].id, data.age)
+            res.send({activities: rows})
         }
         else{
+
             let filteredData = rows.filter(item => {
                 if (item.categories) {
                     const categoriesArray = item.categories.split(',').map(category => category.trim());

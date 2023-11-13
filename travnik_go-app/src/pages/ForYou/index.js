@@ -18,8 +18,6 @@ function ForYou() {
         if(encodedData === ''){
             axios.get(`${SERVER_URL}/forYou/getActivites`).then(resp => {
                 let temp = []
-                console.log("TU SAM")
-                console.log(resp.data)
                 resp.data.activities.map((el)=>{
                     temp.push({
                         image: `slike/${el.id}.jpg`,
@@ -37,13 +35,7 @@ function ForYou() {
         }else {
             axios.get(`${SERVER_URL}/forYou/getSpecialActivities/${encodedData}`).then(resp => {
                 let temp = []
-                console.log(resp.data)
                 resp.data.activities.map((el)=>{
-                    const options = {
-                        timeZone: 'Europe/Sarajevo', // Set the time zone to BiH
-                        hour: '2-digit',
-                        minute: '2-digit',
-                    };
                     temp.push({
                         image: `slike/${el.id}.jpg`,
                         title: el.title,

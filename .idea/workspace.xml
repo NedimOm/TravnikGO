@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="&quot;Fix: conflicts&quot;">
-      <change afterPath="$PROJECT_DIR$/travnik_go-app/src/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/identifier.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/calendarCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/calendarCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-api/routes/forYou.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/routes/forYou.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forForYou/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forForYou/quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/homePageComplexButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/homePageComplexButtons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/ForYou/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/ForYou/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +94,7 @@
       <workItem from="1699540857296" duration="10296000" />
       <workItem from="1699572066061" duration="20506000" />
       <workItem from="1699636235301" duration="39911000" />
-      <workItem from="1699874723283" duration="360000" />
+      <workItem from="1699874723283" duration="4888000" />
     </task>
     <servers />
   </component>

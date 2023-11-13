@@ -88,11 +88,13 @@ export default function Quiz({ isOpen, onClose, image }){
         else{
             setTimeError(false)
             let categories = [];
-            Object.keys(selectedCategories).map(categoryName =>{
-                if(selectedCategories[categoryName] === true)
-                    categories.push(categoryName)
-            })
-            console.log(categories)
+            if(selectedCategories !== undefined || true || null !== []){
+                console.log("OVDJE")
+                Object.keys(selectedCategories).map(categoryName =>{
+                    if(selectedCategories[categoryName] === true)
+                        categories.push(categoryName)
+                })
+            }
             localStorage.setItem('data', JSON.stringify({age:selectedAge, starts:startsDate, ends:endsDate, categories:categories}))
             onClose();
             window.location.href = "/for_you";
