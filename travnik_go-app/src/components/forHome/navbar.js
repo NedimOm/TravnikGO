@@ -8,6 +8,7 @@ import {useEffect, useState} from "react";
 export const Navbar = (props) => {
     useEffect(() => {
         changeClassNameOnScroll("navy", 2, "navbar-scrolled");
+
     }, []);
 
     const [activeNavItem, setActiveNavItem] = useState(props.page);
@@ -40,6 +41,33 @@ export const Navbar = (props) => {
                                 Home
                             </a>
                         </li>
+                        <li className={`nav-item ${activeNavItem === 'For you' ? 'active' : ''}`}>
+                            <a
+                                className={`nav-link ${activeNavItem === 'For you' ? 'active-link' : ''}`}
+                                onClick={() => handleNavItemClick('For you')}
+                                href="/for_you"
+                            >
+                                For you
+                            </a>
+                        </li>
+                        <li className={`nav-item ${activeNavItem === 'Calendar' ? 'active' : ''}`}>
+                        <a
+                            className={`nav-link ${activeNavItem === 'Calendar' ? 'active-link' : ''}`}
+                            onClick={() => handleNavItemClick('Calendar')}
+                            href="/calendar"
+                        >
+                            Calendar
+                        </a>
+                    </li>
+                        <li className={`nav-item ${activeNavItem === 'Tours' ? 'active' : ''}`}>
+                            <a
+                                className={`nav-link ${activeNavItem === 'Tours' ? 'active-link' : ''}`}
+                                onClick={() => handleNavItemClick('Tours')}
+                                href="/tours"
+                            >
+                                Tours
+                            </a>
+                        </li>
                         <li className={`nav-item ${activeNavItem === 'Locations' ? 'active' : ''}`}>
                             <a
                                 className={`nav-link ${activeNavItem === 'Locations' ? 'active-link' : ''}`}
@@ -59,6 +87,9 @@ export const Navbar = (props) => {
                             </a>
                         </li>
                     </ul>
+                    <div>
+
+                    </div>
                 </div>
             </div>
         </nav>

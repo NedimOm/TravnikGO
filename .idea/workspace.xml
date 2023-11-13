@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="just pulling">
+      <change afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/homeMap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/assets/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/bottomNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/bottomNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/contactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/contactUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Home/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/nedim/Desktop/TravnikGO projekat/TravnikGO/travnik_go-app/src/assets/images",
+    "last_opened_file_path": "C:/Users/nedim/Desktop/klonTure/TravnikGO",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -58,8 +73,8 @@
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\pages\Admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\assets\images" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\public" />
+      <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\assets\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

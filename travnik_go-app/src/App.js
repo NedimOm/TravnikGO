@@ -14,8 +14,12 @@ import AdminLocations from "./pages/Admin/adminLocations";
 import AdminTours from "./pages/Admin/adminTours";
 import AdminChallenges from "./pages/Admin/adminChallenges";
 import Locations from "./pages/Locations";
+import {useEffect} from "react";
 
 function App() {
+    useEffect(()=>{
+        document.title = "TravnikGO";
+    }, []);
 
   return (
       <BrowserRouter>
