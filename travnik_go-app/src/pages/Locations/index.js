@@ -1,10 +1,11 @@
-import CalendarCard from "../../components/calendarCard";
+import CalendarCard from "../../components/forCalendar/calendarCard";
 import { Navbar } from "../../components/forHome/navbar";
 import {Grid, Popover} from "@mui/material";
-import { SearchByCategory, SearchByWord } from "../../components/calendarSearchbars";
+import { SearchByCategory, SearchByWord } from "../../components/forCalendar/calendarSearchbars";
 import {useState} from "react";
 import Button from "@mui/material/Button";
 import OurBottomNavigation from "../../components/forHome/bottomNavigation";
+import Link from "@mui/material/Link";
 
 function Locations() {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -33,6 +34,7 @@ function Locations() {
         {
             image: "https://lh3.googleusercontent.com/p/AF1QipPyj6hoalc9NrkeDcKlpeFnO-dTfJaQitf1WKv2=s680-w680-h510",
             title: "my place",
+            link: "myPlace",
             typotitle: `Caffe My Place"`,
             location: "Bosanska 33",
             time: "07:00 - 23:00",

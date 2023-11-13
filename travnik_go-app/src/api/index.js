@@ -40,3 +40,9 @@ export const addLocation = (dataObject) => {
     axios.post('http://localhost:3005/admin/addlocation', dataObject).then(resp => {
     });
 }
+
+export const getCalendarEvents = () => {
+    axios.get('http://localhost:3005/calendar').then(res => {
+        console.log(res);
+    });
+}
