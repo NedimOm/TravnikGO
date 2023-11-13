@@ -7,12 +7,15 @@ import { Navbar } from "../../components/forHome/navbar";
 import HomePageComplexButtons from "../../components/forHome/homePageComplexButtons";
 import Link from "@mui/material/Link";
 import * as React from "react";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import OurBottomNavigation from "../../components/forHome/bottomNavigation";
+import ContactUs from "../../components/forHome/contactUs";
 
 function Home() {
     return (
         <>
             <header>
-                <Navbar />
+                <Navbar background={"dark"} page={"Home"}/>
                 <div
                     id="intro"
                     className="bg-image"
@@ -24,9 +27,8 @@ function Home() {
                     <div className="mask text-white" style={{backgroundColor: "rgba(0, 0, 0, 0.8)"}}>
                         <div className="container d-flex align-items-center text-center h-100">
                             <div className="mx-auto">
-                                <h1 className="mb-5">TravnikGO</h1>
-                                <h3 className="mb-2" style={{ color: "rgba(255, 255, 255, 0.69)" }}>
-                                    Travnik is not just a city, it's an experience that leaves an indelible mark on your soul
+                                <h3 className="mb-5" style={{ color: "rgba(255, 255, 255, 0.79)" }}>
+                                    Travnik is not just a city, it's an experience that leaves an indelible mark on your soul!
                                 </h3>
                                 <HomePageComplexButtons/>
                             </div>
@@ -34,9 +36,8 @@ function Home() {
                     </div>
                 </div>
             </header>
-            <div className="container my-5">
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quam minima perspiciatis eos tenetur. Praesentium dolores at quos aperiam sed, sint provident consectetur incidunt, nostrum porro earum commodi, ex architecto.</p>
-            </div>
+            <ContactUs/>
+            <OurBottomNavigation/>
         </>
 
     );

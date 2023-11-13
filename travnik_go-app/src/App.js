@@ -13,6 +13,7 @@ import AdminEvents from "./pages/Admin/adminEvents";
 import AdminLocations from "./pages/Admin/adminLocations";
 import AdminTours from "./pages/Admin/adminTours";
 import AdminChallenges from "./pages/Admin/adminChallenges";
+import Locations from "./pages/Locations";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/tours" element={<Tours />} />
               <Route path="/for_you" element={<ForYou />} />
+              <Route path="/locations" element={<Locations />} />
               <Route path="/admin" element={<AdminLogin />} />
               <Route path="/admin/events" element={<AdminEvents />} />
               <Route path="/admin/locations" element={<AdminLocations />} />

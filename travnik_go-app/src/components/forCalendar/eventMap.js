@@ -4,7 +4,7 @@ import '../../assets/css/index.css';
 const center = { lat: 44.22637, lng: 17.66583 };
 const containerStyle = {
     width: '100%',
-    height: '400px'
+    height: '300px'
 };
 const zoom = 18;
 function EventMap(){
