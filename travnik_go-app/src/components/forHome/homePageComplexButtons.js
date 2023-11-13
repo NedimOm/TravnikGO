@@ -15,7 +15,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import {InputLabel} from "@mui/material";
 import Grid from "@mui/material/Grid";
-import {Quiz} from "../forForYou/quiz";
+import Quiz from "../forForYou/quiz";
 
 const images = [
     {

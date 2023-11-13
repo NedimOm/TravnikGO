@@ -5,7 +5,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var forYouRouter = require('./routes/forYou');
 var cors = require('cors');
+const brain = require('brain.js');
+const net = new brain.NeuralNetwork();
 
 var app = express();
 
@@ -18,5 +21,6 @@ app.use(cors());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/forYou', forYouRouter);
 
 module.exports = app;

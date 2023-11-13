@@ -4,7 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import  '../../assets/css/main.css';
 import { changeClassNameOnScroll } from "../../assets/javascript/skripta";
 import {useEffect} from "react";
-import { proba } from "../../api";
+import {proba, proba2, proba3} from "../../api";
 
 export const Navbar = () => {
     useEffect(() => {
@@ -24,7 +24,7 @@ export const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <button
-                                onClick={proba}
+                                onClick={proba3}
                             >
                                 Proba za axios
                             </button>

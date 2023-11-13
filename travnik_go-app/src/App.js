@@ -14,6 +14,7 @@ import AdminLocations from "./pages/Admin/adminLocations";
 import AdminTours from "./pages/Admin/adminTours";
 import AdminChallenges from "./pages/Admin/adminChallenges";
 
+
 function App() {
 
   return (

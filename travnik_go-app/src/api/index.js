@@ -1,8 +1,24 @@
 import axios from 'axios';
+import {SERVER_URL} from "../constants";
+
 
 export const proba = () => {
     console.log("evo me");
-    axios.get('http://localhost:3005/proba').then(resp => {
+    axios.get(`${SERVER_URL}/proba`).then(resp => {
+        console.log(resp);
+    });
+}
+
+export const proba2 = () => {
+    console.log("evo me");
+    axios.get(`${SERVER_URL}/forYou/getActivites`).then(resp => {
+        console.log(resp);
+    });
+}
+
+export const proba3 = () => {
+    console.log("evo me");
+    axios.get(`${SERVER_URL}/forYou/getCategories`).then(resp => {
         console.log(resp);
     });
 }

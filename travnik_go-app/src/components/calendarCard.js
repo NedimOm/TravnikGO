@@ -13,6 +13,8 @@ const chipsColors = {
     Music: "success",
     Culture: "primary",
     Festival: "warning",
+    Sport: "error",
+    Food: "info"
 }
 
 export default function CalendarCard({el}) {
@@ -56,7 +58,7 @@ export default function CalendarCard({el}) {
                 <CardContent>
                     <Stack direction="row" spacing={1} className={"mb-3"}>
                         {el.categories.map((c) =>
-                            <Chip label={c} color={chipsColors[c]} />
+                            <Chip label={c} color={chipsColors[c]} key={c} />
                         )}
                     </Stack>
                     <Typography gutterBottom variant="h5" component="div" style={{ fontWeight: "bold"}}>
@@ -65,9 +67,11 @@ export default function CalendarCard({el}) {
                     <Typography variant="body2" color="text.primary" className={"mb-2"}>
                         <Place /> {el.location}
                     </Typography>
+                    { el.time != null &&
                     <Typography variant="body2" color="text.primary" className={"mb-2"}>
                         <WatchLater /> {el.time}
                     </Typography>
+                    }
                     <Typography variant="body2" color="text.secondary">
                         {el.description.substring(0, 175)}...
                     </Typography>
