@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="&quot;Fix: conflicts&quot;">
+      <change afterPath="$PROJECT_DIR$/travnik_go-app/src/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Locations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Locations/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/database/identifier.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/calendarCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/calendarCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forForYou/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forForYou/quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/ForYou/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/ForYou/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -53,6 +58,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\assets\images" />
@@ -61,6 +74,7 @@
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\pages\Admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eminm\OneDrive\Desktop\Travnik hakaton\TravnikGO\travnik_go-app\src" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\assets\images" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\public" />
     </key>
@@ -77,6 +91,7 @@
       <workItem from="1699540857296" duration="10296000" />
       <workItem from="1699572066061" duration="20506000" />
       <workItem from="1699636235301" duration="39911000" />
+      <workItem from="1699874723283" duration="360000" />
     </task>
     <servers />
   </component>
