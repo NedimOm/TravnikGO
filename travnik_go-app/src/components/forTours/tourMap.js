@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { GoogleMap, MarkerF, useJsApiLoader, DirectionsService, DirectionsRenderer  } from "@react-google-maps/api";
+import { GoogleMap, MarkerF, useJsApiLoader} from "@react-google-maps/api";
 import '../../assets/css/index.css';
 const center = { lat: 44.22637, lng: 17.66583 };
 const containerStyle = {
@@ -18,13 +18,13 @@ function TourMap(){
     const [directionsResponse, setDirectionsResponse] = useState(null);
     const [directions, setDirections] = useState(null);
 
-    const directionsCallback = (response, status) => {
+    /*const directionsCallback = (response, status) => {
         if (status === 'OK') {
             setDirections(response);
         } else {
             console.error(`Error fetching directions: ${status}`);
         }
-    };
+    };*/
 
     const onLoad = React.useCallback(function callback(map) {
         //const bounds = new window.google.maps.LatLngBounds(center);
@@ -57,19 +57,6 @@ function TourMap(){
                         onLoad={onLoad}
                         onUnmount={onUnmount}
                     >
-                        <DirectionsService
-                            options={{
-                                destination: destinations[destinations.length - 1],
-                                origin: center,
-                                travelMode: 'DRIVING',
-                                waypoints: destinations.slice(0, destinations.length - 1).map((destination) => ({
-                                    location: destination,
-                                    stopover: true,
-                                })),
-                            }}
-                            callback={directionsCallback}
-                        />
-                        {directions && <DirectionsRenderer directions={directions} />}
                     </GoogleMap>
                 </div>
             )}

@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var {db} = require('../databaseConnection');
-var weather = require('weather-js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
