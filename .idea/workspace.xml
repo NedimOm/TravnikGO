@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="just pulling">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/identifier.sqlite" beforeDir="false" />
-    </list>
+    <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="just pulling" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +72,7 @@
       <workItem from="1699540857296" duration="10296000" />
       <workItem from="1699572066061" duration="20506000" />
       <workItem from="1699636235301" duration="39911000" />
-      <workItem from="1699910151145" duration="414000" />
+      <workItem from="1699910151145" duration="722000" />
     </task>
     <servers />
   </component>
