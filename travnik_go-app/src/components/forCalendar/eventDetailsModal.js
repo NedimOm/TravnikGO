@@ -20,7 +20,7 @@ export default function EventDetailsModal({el}) {
 
     return (
         <>
-            <Button variant="outlined" size="small" onClick={() => setOpen(true)}>Learn More</Button>
+            <Button variant="outlined" size="small" onClick={() => {if(el.link !== 'myPlace') setOpen(true); else window.location.href = '/locations/myPlace'; }}>Learn More</Button>
             <Dialog
                 fullScreen={fullScreen}
                 open={open}
