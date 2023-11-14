@@ -19,7 +19,9 @@ import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Box from "@mui/material/Box";
+import { Grid } from "@mui/material";
 import TourStepper from "../../components/forTours/stepper";
+import OurBottomNavigation from "../../components/forHome/bottomNavigation";
 
 const chipsColors = {
     History: "primary",
@@ -82,76 +84,91 @@ function TourForYou(){
             <header>
                 <Navbar background={"white"} page={"Tours"}/>
                 <div
-                    id="intro"
-                    className="bg-image"
                     style={{
-                        "height": "30vh"
+                        "height": "13vh"
                     }}
                 >
-                    <div className="mask text-black">
-                        <div className="container d-flex align-items-center text-center h-100">
-                            <div className="mx-auto">
-                                <h4 style={{ color: "rgba(0, 0, 0, 0.69)" }}>
-                                    This App can generate your tour in Travnik. Just enter your location and you can start your adventure.
-                                </h4>
-                            </div>
+                </div>
+            </header>
+            <div className={"container-fluid mb-4"}>
+                <div className="container mt-4">
+                    <div className="container d-flex align-items-center text-center h-100">
+                        <div className="mx-auto">
+                            <h4 style={{ color: "rgba(0, 0, 0, 0.69)" }}>
+                                This App can generate your tour in Travnik. Just enter your location and you can start your adventure.
+                            </h4>
                         </div>
                     </div>
                 </div>
-            </header>
-            {
-                loading ? (
-                    <div className={"container align-items-center d-flex"}>
-                        <div className={"mx-auto"}>
-                            <CircularProgress color="success" />
+                {
+                    loading ? (
+                        <div className={"container align-items-center d-flex"}>
+                            <div className={"mx-auto"}>
+                                <CircularProgress color="success" />
+                            </div>
                         </div>
-                    </div>
-                ) : (
-                    <>
-                        <div className={"container"}>
-                            <Box
-                                display="flex"
-                                justifyContent="center"
-                                alignItems="center"
-                                minHeight="10vh"
-                            >
-                                <Button color={"success"} variant="contained" size={"large"}><AutoFixHighIcon/>Generate tour by my location</Button>
-                            </Box>
+                    ) : (
+                        <>
+                            <div className={"container"}>
+                                <Box
+                                    display="flex"
+                                    justifyContent="center"
+                                    alignItems="center"
+                                    minHeight="10vh"
+                                >
+                                    <Button color={"success"} variant="contained" size={"large"}><AutoFixHighIcon/>Generate tour by my location</Button>
+                                </Box>
 
-                            <TourTabs props={coords}/>
+                                <TourTabs props={coords}/>
 
-                            <Stack direction="row" spacing={2} className={"my-3"}>
-                                <TourStepper />
-                                <div className={"container-fluid"}>
-                                    <TourMap />
-                                </div>
-                            </Stack>
-                        </div>
-                        <div className={"container mt-4"}>
-                            <section>
-                                <p><b>About Tour</b></p>
-                                <p>{aboutData.about}</p>
-                                <Divider/>
-                                <div className={"mt-3"}>
-                                    <Typography variant="body2" color="text.primary" className={"mb-2"}>
-                                        <GroupsIcon/><span className={"mx-3 py-3"}>Ages {aboutData.ages}</span>
-                                    </Typography>
-                                    <Typography variant="body2" color="text.primary" className={"mb-2"}>
-                                        <HourglassEmptyIcon /><span className={"mx-3 py-3"}>Duration: {aboutData.duration}</span>
-                                    </Typography>
-                                    <Stack direction="row" spacing={2} className={"my-3"}>
-                                        {aboutData.type.map((t) =>
-                                            <Chip label={t} color={chipsColors[t]} size="large" className={"p-3"}/>
-                                        )}
-                                    </Stack>
+                                    <Grid
+                                        container
+                                        spacing={2}
+                                        direction="row"
+                                    >
+                                        <Grid item xs={12} md={6} lg={6}>
+                                            <div>
+                                                <TourStepper />
+                                            </div>
+
+                                        </Grid>
+                                        <Grid item xs={12} md={6} lg={6}>
+                                            <div>
+                                                <TourMap />
+                                            </div>
+
+                                        </Grid>
+                                    </Grid>
+                            </div>
+                            <div className={"container mt-4"}>
+                                <section>
+                                    <p><b>About Tour</b></p>
+                                    <p>{aboutData.about}</p>
                                     <Divider/>
-                                </div>
+                                    <div className={"mt-3"}>
+                                        <Typography variant="body2" color="text.primary" className={"mb-2"}>
+                                            <GroupsIcon/><span className={"mx-3 py-3"}>Ages {aboutData.ages}</span>
+                                        </Typography>
+                                        <Typography variant="body2" color="text.primary" className={"mb-2"}>
+                                            <HourglassEmptyIcon /><span className={"mx-3 py-3"}>Duration: {aboutData.duration}</span>
+                                        </Typography>
+                                        <Stack direction="row" spacing={2} className={"my-3"}>
+                                            {aboutData.type.map((t) =>
+                                                <Chip label={t} color={chipsColors[t]} size="large" className={"p-3"}/>
+                                            )}
+                                        </Stack>
+                                        <Divider/>
+                                    </div>
 
-                            </section>
-                        </div>
-                    </>
-                )
-            }
+                                </section>
+                            </div>
+                        </>
+                    )
+                }
+            </div>
+            <div>
+                <OurBottomNavigation/>
+            </div>
 
         </>
     );

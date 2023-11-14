@@ -5,37 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forDidYouKnow/dykCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/followUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/DidYouKnow/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/editEventDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/editEventDrawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/eventsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/eventsTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/locationsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/locationsTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forAdmin/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/calendarSearchbars.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/calendarSearchbars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/eventDetailsModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forCalendar/eventDetailsModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/bottomNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/bottomNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/contactUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/contactUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/homeMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/homeMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forHome/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forLocation/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forLocation/Review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/stepper.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/stepper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/tabs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/tourMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/tourMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminChallenges.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminChallenges.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminEvents.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminEvents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminLocations.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminLocations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminTours.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/adminTours.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Admin/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Calendar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/ForYou/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/ForYou/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Location/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Location/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Locations/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Locations/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +16,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "almacemer"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5e4b57ab-d139-406f-ba3e-b846c3785be5" />
+        <option name="url" value="https://github.com/NedimOM/TravnikGO.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,24 +49,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/nedim/Desktop/TravnikGO projekat/TravnikGO/travnik_go-app/src/components/forHome",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.1.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nedim/Desktop/TravnikGO projekat/TravnikGO/travnik_go-app/src/assets/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.1.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -92,7 +77,6 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\components\forHome" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\assets\images" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\public" />
       <recent name="C:\Users\nedim\Desktop\TravnikGO projekat\TravnikGO\travnik_go-app\src\components\forAdmin" />
