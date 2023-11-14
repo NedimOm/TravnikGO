@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Modal from '@mui/joy/Modal';
 import ModalClose from '@mui/joy/ModalClose';
 import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
@@ -55,7 +54,11 @@ export default function EventDetailsModal({el}) {
                         <Place /> {el.location}
                     </Typography>
                     <Typography variant="body2" color="text.primary" className={"mb-2"}>
-                        <WatchLater /> {el.time}
+                        {el.time != null &&
+                            <>
+                                <WatchLater /> {el.time}
+                            </>
+                        }
                     </Typography>
                 </Sheet>
             </Dialog>

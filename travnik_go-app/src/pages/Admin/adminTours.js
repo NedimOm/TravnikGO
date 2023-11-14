@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import EventsTable from "../../components/forAdmin/eventsTable";
 import Sidebar from "../../components/forAdmin/sidebar";
 import AddEventDrawer from "../../components/forAdmin/addEventDrawer";

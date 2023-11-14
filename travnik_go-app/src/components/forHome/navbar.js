@@ -81,7 +81,7 @@ export const Navbar = (props) => {
                             <a
                                 className={`nav-link ${activeNavItem === 'DidYouKnow' ? 'active-link' : ''}`}
                                 onClick={() => handleNavItemClick('DidYouKnow')}
-                                href="#"
+                                href="/did_you_know"
                             >
                                 Did you know?
                             </a>

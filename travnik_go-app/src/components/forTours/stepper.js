@@ -5,8 +5,6 @@ import Step from '@mui/material/Step';
 import StepContent from '@mui/material/StepContent';
 import StepButton from '@mui/material/StepButton';
 import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty';
-import SportsHandballIcon from "@mui/icons-material/SportsHandball";
-import Button from "@mui/material/Button";
 import ChallengeDialog from "./challengeDialog";
 
 export default function TourStepper() {

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import EventsTable from "../../components/forAdmin/eventsTable";
 import Sidebar from "../../components/forAdmin/sidebar";
 import AddLocationDrawer from "../../components/forAdmin/addLocationDrawer";
 import LocationsTable from "../../components/forAdmin/locationsTable";

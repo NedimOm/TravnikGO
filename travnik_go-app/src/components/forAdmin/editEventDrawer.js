@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/joy/Box';
 import Drawer from '@mui/joy/Drawer';
-import AddIcon from '@mui/icons-material/Add';
 import {Button} from "@mui/material";
 import {Alert, ModalClose, Snackbar} from "@mui/joy";
 import DialogTitle from "@mui/material/DialogTitle";
@@ -10,7 +9,6 @@ import TextField from "@mui/material/TextField";
 import {useState} from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import IconButton from "@mui/material/IconButton";
-import {getLocation} from "../../api";
 export default function EditEventDrawer() {
     const [open, setOpen] = React.useState(false);
     const [openSnackbar, setOpenSnackbar] = React.useState(false);

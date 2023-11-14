@@ -7,15 +7,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import {Button, Stack} from "@mui/material";
-import EditIcon from '@mui/icons-material/Edit';
-import IconButton from "@mui/material/IconButton";
+import {Stack} from "@mui/material";
 import DeleteConfirmationDialog from "./deleteConfirmationDialog";
 import EditLocationDrawer from "./editLocationDrawer";
-import SeeDetailsDialog from "./seeDetailsDialog";
-import {useEffect, useState} from "react";
-import {getLocations} from "../../api/index";
-import axios from "axios";
 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
