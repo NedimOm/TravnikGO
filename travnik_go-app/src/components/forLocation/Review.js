@@ -9,6 +9,12 @@ import {
     Grid,
     TextField,
     Typography,
+    Select,
+    MenuItem,
+    FormControl,
+    InputLabel,
+    Chip,
+    Stack,
 } from '@mui/material';
 import {Rating} from "@mui/lab";
 
@@ -43,19 +49,54 @@ const ReviewModal = ({ open, onClose }) => {
 
     return (
         <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
-            <DialogTitle>Write a Review</DialogTitle>
+            <DialogTitle><h3>Tell us, how was your visit?</h3></DialogTitle>
             <DialogContent>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
+                        <Typography variant="body1" color="text.primary">
+                            How would you rate your experience?
+                        </Typography>
                         <Rating
                             name="simple-controlled"
                             value={rating}
                             onChange={(event, newValue) => {
                                 setRating(newValue);
                             }}
+                            size={"large"}
                         />
                     </Grid>
                     <Grid item xs={12}>
+                        <Typography variant="body1" color="text.primary">
+                            When did you go?
+                        </Typography>
+                        <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                            <InputLabel id="demo-simple-select-autowidth-label">Select one</InputLabel>
+                            <Select
+                                labelId="demo-simple-select-autowidth-label"
+                                id="demo-simple-select-autowidth"
+                                autoWidth
+                                label="Age"
+                            >
+                                <MenuItem value={10}>Ten</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography variant="body1" color="text.primary">
+                            Who did you go with?
+                        </Typography>
+                        <Stack direction="row" spacing={1} className={"mt-1"}>
+                            <Chip label="Friends" onClick={() => {}} />
+                            <Chip label="Family" onClick={() => {}} />
+                            <Chip label="Solo" onClick={() => {}} />
+                            <Chip label="Couples" onClick={() => {}} />
+                            <Chip label="Business" onClick={() => {}} />
+                        </Stack>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography variant="body1" color="text.primary" className={"mb-1"}>
+                            Write your review
+                        </Typography>
                         <TextField
                             fullWidth
                             multiline
@@ -89,8 +130,8 @@ const ReviewModal = ({ open, onClose }) => {
                 <Button onClick={handleClose} color="primary">
                     Cancel
                 </Button>
-                <Button onClick={handleSubmit} color="primary">
-                    Submit
+                <Button onClick={handleSubmit} color="primary" variant={"contained"} className={"mx-3"}>
+                    Send review
                 </Button>
             </DialogActions>
         </Dialog>
