@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4c68b897-1148-4ad5-8898-c73cbebc3592" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/pages/Tours/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/pages/Tours/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/tourMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/travnik_go-app/src/components/forTours/tourMap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

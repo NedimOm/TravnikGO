@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { GoogleMap, MarkerF, useJsApiLoader} from "@react-google-maps/api";
 import '../../assets/css/index.css';
-const center = { lat: 44.22637, lng: 17.66583 };
+const center = { lat: 44.22670871016009, lng: 17.668074153715402 };
 const containerStyle = {
     width: '100%',
     height: '400px'
@@ -15,16 +15,6 @@ function TourMap(){
     });
 
     const [map, setMap] = React.useState(null);
-    const [directionsResponse, setDirectionsResponse] = useState(null);
-    const [directions, setDirections] = useState(null);
-
-    /*const directionsCallback = (response, status) => {
-        if (status === 'OK') {
-            setDirections(response);
-        } else {
-            console.error(`Error fetching directions: ${status}`);
-        }
-    };*/
 
     const onLoad = React.useCallback(function callback(map) {
         //const bounds = new window.google.maps.LatLngBounds(center);
@@ -57,6 +47,12 @@ function TourMap(){
                         onLoad={onLoad}
                         onUnmount={onUnmount}
                     >
+                        {
+                            destinations.map((d, index) => (
+                                <MarkerF position={d} title={index+1} />
+                            ))
+                        }
+
                     </GoogleMap>
                 </div>
             )}
