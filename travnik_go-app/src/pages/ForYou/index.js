@@ -1,6 +1,6 @@
 import CalendarCard from "../../components/forCalendar/calendarCard";
 import { Navbar } from "../../components/forHome/navbar";
-import {Grid, Stack} from "@mui/material";
+import {Grid, Popover} from "@mui/material";
 import { SearchByCategory, SearchByWord } from "../../components/forCalendar/calendarSearchbars";
 import TextField from "@mui/material/TextField";
 import * as React from "react";
@@ -8,6 +8,8 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import {SERVER_URL} from "../../constants";
 import queryString from 'query-string';
+import Button from "@mui/material/Button";
+import OurBottomNavigation from "../../components/forHome/bottomNavigation";
 
 function ForYou() {
     const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
@@ -51,16 +53,28 @@ function ForYou() {
             });
         }
     }, [])
+    const [anchorEl, setAnchorEl] = useState(null);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popover' : undefined;
 
     return(
         <>
             <header>
-                <Navbar />
+                <Navbar background={"white"} page={"For you"}/>
                 <div
                     id="intro"
                     className="bg-image"
                     style={{
-                        "height": "20vh"
+                        "height": "13vh"
                     }}
                 >
 
@@ -69,25 +83,38 @@ function ForYou() {
             <div className="container-fluid  mb-5">
                 <div className="container d-flex align-items-center text-center h-100">
                     <div className="mx-auto my-4">
-                        <h1 style={{ color: "#000" }}>TravnikGO Events we recommend</h1>
+                        <h3 style={{ color: "#000" }}>Events we recommend for you</h3>
                         <p>Explore events tailored for you</p>
+                        <Grid item xs={"auto"}>
+                            <Button aria-describedby={id} variant="outlined" onClick={handleClick}>
+                                FILTER EVENTS
+                            </Button>
+                            <Popover
+                                id={id}
+                                open={open}
+                                anchorEl={anchorEl}
+                                onClose={handleClose}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                            >
+                                <div className={"m-3"}>
+                                    <SearchByCategory />
+                                </div>
+                                <div className={"m-3"}>
+                                    <SearchByWord />
+                                </div>
+                                <div className={"m-3"}>
+                                    <TextField
+                                        type="date"
+                                        name="dateOfEntry"
+                                        style={{ border: 'none', outline: 'none' }}
+                                    />
+                                </div>
+                            </Popover>
+                        </Grid>
                     </div>
-                </div>
-                <div className={"container"}>
-                    <Stack direction={{ xs: 'column', md: 'row' }} spacing={3} className="mb-4 d-flex justify-content-start">
-                        <Stack direction="row" spacing={3} className="mb-4">
-                            <SearchByWord />
-                            <SearchByCategory />
-                        </Stack>
-
-                        <div style={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
-                            <TextField
-                                type="date"
-                                name="dateOfEntry"
-                                style={{ border: 'none', outline: 'none' }}
-                            />
-                        </div>
-                    </Stack>
                 </div>
 
                 <Grid
@@ -114,6 +141,7 @@ function ForYou() {
                     ))}
                 </Grid>
             </div>
+            <OurBottomNavigation/>
         </>
     );
 }

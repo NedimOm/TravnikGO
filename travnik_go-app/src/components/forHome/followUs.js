@@ -1,10 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import PhoneIcon from "@mui/icons-material/Phone";
-import EmailIcon from "@mui/icons-material/Email";
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram} from '@fortawesome/free-brands-svg-icons'
 
-const ContactUs = () => {
+const FollowUs = () => {
     const boxStyle = {
 
         textAlign: "center",
@@ -20,22 +21,22 @@ const ContactUs = () => {
     return (
         <Box style={boxStyle}>
             <Typography variant="h6" color="primary" className="mb-1 mt-3">
-                Contact Us
+                Follow us on social media
             </Typography>
             <div className="mb-3 mt-3">
                 <Typography variant="body1">
-                    <PhoneIcon style={iconStyles} />
-                    Phone: +1 (123) 456-7890
+                    <FacebookOutlinedIcon color="primary" style={iconStyles} />
+                    Facebook
                 </Typography>
             </div>
             <div className="pb-2">
                 <Typography variant="body1">
-                    <EmailIcon style={iconStyles} />
-                    Email: challenge@itreboot.ba
+                    <FontAwesomeIcon icon={faInstagram} style={iconStyles} size="lg"/>
+                    Instagram
                 </Typography>
             </div>
         </Box>
     );
 };
 
-export default ContactUs;
+export default FollowUs;

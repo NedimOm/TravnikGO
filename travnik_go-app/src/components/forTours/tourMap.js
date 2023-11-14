@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { GoogleMap, MarkerF, useJsApiLoader} from "@react-google-maps/api";
 import '../../assets/css/index.css';
 const center = { lat: 44.22637, lng: 17.66583 };

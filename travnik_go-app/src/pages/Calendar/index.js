@@ -5,6 +5,8 @@ import { SearchByCategory, SearchByWord } from "../../components/forCalendar/cal
 import {useState} from "react";
 import Button from "@mui/material/Button";
 import OurBottomNavigation from "../../components/forHome/bottomNavigation";
+import TextField from "@mui/material/TextField";
+import * as React from "react";
 
 function Calendar() {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -88,6 +90,13 @@ function Calendar() {
                                 </div>
                                 <div className={"m-3"}>
                                     <SearchByWord />
+                                </div>
+                                <div className={"m-3"}>
+                                    <TextField
+                                        type="date"
+                                        name="dateOfEntry"
+                                        style={{ border: 'none', outline: 'none' }}
+                                    />
                                 </div>
                             </Popover>
                         </Grid>

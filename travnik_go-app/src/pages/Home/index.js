@@ -13,6 +13,7 @@ import Grid from "@mui/material/Grid";
 import {Carousel} from "react-bootstrap";
 import Card from "@mui/material/Card";
 import HomeMap from "../../components/forHome/homeMap";
+import FollowUs from "../../components/forHome/followUs";
 
 function Home() {
     const { data, isLoading, errorMessage } = useOpenWeather({
@@ -82,8 +83,14 @@ function Home() {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={12} md={6} lg={4} className={'carouselHome'}>
+                <Grid item xs={12} md={6} lg={4}>
                     <Card className={"m-1"}>
+                        <HomeMap/>
+                        <FollowUs/>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} md={6} lg={4}>
+                    <Card className={"m-1 mb-2"}>
                         <Carousel>
                             {dataCarousel.map((el, index) => (
                                 <Carousel.Item key={index} interval={3500}>
@@ -94,12 +101,6 @@ function Home() {
                                 </Carousel.Item>
                             ))}
                         </Carousel>
-                        <ContactUs/>
-                    </Card>
-                </Grid>
-                <Grid item xs={12} md={6} lg={4}>
-                    <Card className={"m-1"}>
-                        <HomeMap/>
                         <ContactUs/>
                     </Card>
                 </Grid>

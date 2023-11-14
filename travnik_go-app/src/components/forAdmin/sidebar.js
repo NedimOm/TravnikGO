@@ -20,8 +20,6 @@ import EventIcon from '@mui/icons-material/Event';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import TourIcon from '@mui/icons-material/Tour';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import {Navigate} from "react-router-dom";
-
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
