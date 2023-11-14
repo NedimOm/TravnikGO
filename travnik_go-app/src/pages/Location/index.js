@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel';
-import {Paper, Button, Grid, Popover} from '@mui/material';
+import {Button, Grid, Popover} from '@mui/material';
 import {Navbar} from "../../components/forHome/navbar";
-import {SearchByCategory, SearchByWord} from "../../components/forCalendar/calendarSearchbars";
 import {Rating} from "@mui/lab";
 import Stack from "@mui/material/Stack";
 import Card from "@mui/material/Card";

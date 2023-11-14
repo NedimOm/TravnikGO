@@ -4,9 +4,7 @@ import { buttonClasses } from '@mui/base/Button';
 import { Tabs } from '@mui/base/Tabs';
 import { Tab as BaseTab, tabClasses } from '@mui/base/Tab';
 import { TabsList as BaseTabsList } from '@mui/base/TabsList';
-import {useEffect, useState} from "react";
-import Box from "@mui/material/Box"
-
+import {useState} from "react";
 export default function TourTabs({props}) {
     const [value, setValue] = useState(1);
 

@@ -16,6 +16,7 @@ import AdminChallenges from "./pages/Admin/adminChallenges";
 import Locations from "./pages/Locations";
 import {useEffect} from "react";
 import Location from "./pages/Location"
+import DidYouKnow from "./pages/DidYouKnow";
 
 function App() {
     useEffect(()=>{
@@ -29,6 +30,7 @@ function App() {
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/tours" element={<Tours />} />
               <Route path="/for_you" element={<ForYou />} />
+              <Route path="/did_you_know" element={<DidYouKnow />} />
               <Route path="/locations" element={<Locations />} />
               <Route path="/locations/myPlace" element={<Location />} />
               <Route path="/admin" element={<AdminLogin />} />

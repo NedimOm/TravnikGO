@@ -6,7 +6,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
-import {Box, Stack} from "@mui/material";
+import {Stack} from "@mui/material";
 
 export function SearchByCategory() {
     const [category, setCategory] = React.useState('');

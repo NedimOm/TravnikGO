@@ -1,5 +1,5 @@
 import React from "react";
-import {GoogleMap, MarkerF, StreetViewPanorama, useJsApiLoader} from "@react-google-maps/api";
+import {GoogleMap, useJsApiLoader} from "@react-google-maps/api";
 const center = { lat: 44.22637, lng: 17.66583 };
 const containerStyle = {
     width: '100%',
@@ -38,9 +38,6 @@ function HomeMap(){
                         onLoad={onLoad}
                         onUnmount={onUnmount}
                     >
-                        <StreetViewPanorama defaultPosition={{ lat: 44.229651341178425, lng: 17.67067931680896 }}>
-                            <MarkerF position={{ lat: 44.229651341178425, lng: 17.67067931680896 }} />
-                        </StreetViewPanorama>
                     </GoogleMap>
                 </div>
             )}

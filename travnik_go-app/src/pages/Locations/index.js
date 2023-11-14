@@ -5,8 +5,6 @@ import { SearchByCategory, SearchByWord } from "../../components/forCalendar/cal
 import {useState} from "react";
 import Button from "@mui/material/Button";
 import OurBottomNavigation from "../../components/forHome/bottomNavigation";
-import Link from "@mui/material/Link";
-
 function Locations() {
     const [anchorEl, setAnchorEl] = useState(null);
 
